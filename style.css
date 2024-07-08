@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Young Serif", serif;
+    line-height: 24px;
+}
+
+body{
+    background-color: hsl(330, 100%, 98%);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.main{
+    background-color: white;
+    margin: 16px;
+    padding: 18px 20px 18px 20px;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    row-gap: 20px;
+}
+
+.image-omelette{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.heading-1{
+    font-size: 26px;
+    padding:10px 0 10px 0 ;
+}
+
+.heading-2{
+    font-size: 18px;
+    color: hsl(32, 35%, 48%);
+}
+
+.heading-3{
+    font-size: 14px;
+    margin: 0 0 6px 0;
+    color: hsl(30, 10%, 34%);
+}
+
+.para, .nutrition-data{
+    font-weight: 200;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.para, .nutrition-data, .prep-para{
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+.prep-para{
+    font-size: 12px;
+}
+
+li{
+    margin: 0 0 0 18px;
+}
+
+li::marker{
+    font-size: 14px;
+    color: hsl(32, 37%, 59%);
+}
+
+.nutrition{
+    display: flex;
+    justify-content:left;
+}
+
+.nutrition-data{
+    flex: 1;
+    margin:  0 0 0 20px;
+}
+
+.div-preparation{
+    border-radius: 10px;
+    padding: 6px 0 6px 30px;
+    background-color: hsl(330, 100%, 98%);
+}
+
+p.heading-2,
+p.para{
+    padding: 5px 0 5px 0;
+}
+
+.div-ingredients,
+.div-instructions{
+    padding-bottom: 14px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+@media (max-width: 600px) {
+    .main{
+        width: 100%;
+        padding: 0 20px 0 20px;
+        margin: 0;
+    }
+    body{
+        padding: 0 0 0 0;
+    }
+}
